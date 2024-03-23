@@ -25,9 +25,11 @@ class AddressViewController: UIViewController, UITextFieldDelegate, AddressProto
     
     private lazy var searchButton: UIButton = {
         let button = UIButton()
+        button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         button.setTitle("Buscar", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        button.setTitleColor(.systemBlue, for: .normal)
+        button.backgroundColor = .black
         return button
     }()
     
@@ -38,18 +40,18 @@ class AddressViewController: UIViewController, UITextFieldDelegate, AddressProto
     }()
     
     @objc func buttonTapped() {
-        // Get the value from the text field
-        guard let text = textField.text else {
-            print("Text field is empty")
-            return
-        }
-        
-        interactor?.fetchAddress(cep: text)
-        
-        addressView.reloadInputViews()
-        
-        // Use the value as needed
-        print("Value from text field: \(text)")
+        print("aaaaaa")
+//        // Get the value from the text field
+//        guard let text = textField.text else {
+//            print("Text field is empty")
+//            return
+//        }
+//        
+//        interactor?.fetchAddress(cep: text)
+//        addressView.reloadInputViews()
+//        
+//        // Use the value as needed
+//        print("Value from text field: \(text)")
     }
     
     func showAddressView(cep: String,
@@ -69,9 +71,12 @@ class AddressViewController: UIViewController, UITextFieldDelegate, AddressProto
     
     func setupViews() {
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .white
         view.addSubview(textField)
         view.addSubview(searchButton)
         view.addSubview(addressView)
+        
+        searchButton.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -24).isActive = true
         
         NSLayoutConstraint.activate([
             textField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
@@ -80,7 +85,6 @@ class AddressViewController: UIViewController, UITextFieldDelegate, AddressProto
             textField.heightAnchor.constraint(equalToConstant: 40),
             
             searchButton.topAnchor.constraint(equalTo: textField.bottomAnchor, constant: 24),
-            searchButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             
             addressView.topAnchor.constraint(equalTo: searchButton.bottomAnchor, constant: 24),
             addressView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8),

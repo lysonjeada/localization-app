@@ -7,153 +7,43 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1ECD3594-FAD9-462C-B156-FADE8FE7ACA8"
+            uuid = "B5EB096D-51FC-4BC0-AD14-ABD2F4EC6761"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "localization-app/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "buttonTapped()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "92A77C33-2C79-4402-B6A6-9977BB82902A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "localization-app/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "buttonTapped()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "92A77C33-2C79-4402-B6A6-9977BB82902A - 863b6de87fe42c0c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "localization_app.AddressViewController.buttonTapped() -&gt; ()"
-                  moduleName = "localization-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maclys/Documents/localization-app/localization-app/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43"
-                  offsetFromSymbolStart = "844">
-               </Location>
-               <Location
-                  uuid = "92A77C33-2C79-4402-B6A6-9977BB82902A - 863b6de87fe42c0c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "localization_app.AddressViewController.buttonTapped() -&gt; ()"
-                  moduleName = "localization-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maclys/Documents/localization-app/localization-app/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43"
-                  offsetFromSymbolStart = "868">
-               </Location>
-               <Location
-                  uuid = "92A77C33-2C79-4402-B6A6-9977BB82902A - 863b6de87fe42c0c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "localization_app.AddressViewController.buttonTapped() -&gt; ()"
-                  moduleName = "localization-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maclys/Documents/localization-app/localization-app/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43"
-                  offsetFromSymbolStart = "900">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2CAA843C-5B6C-4413-8DE0-58DC1514FA40"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "localization-app/ViewController.swift"
+            filePath = "localization-app/Address/View/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
             endingLineNumber = "44"
             landmarkName = "buttonTapped()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "2CAA843C-5B6C-4413-8DE0-58DC1514FA40 - 863b6de87fe42c23"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "localization_app.AddressViewController.buttonTapped() -&gt; ()"
-                  moduleName = "localization-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maclys/Documents/localization-app/localization-app/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "944">
-               </Location>
-               <Location
-                  uuid = "2CAA843C-5B6C-4413-8DE0-58DC1514FA40 - 863b6de87fe42c23"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "localization_app.AddressViewController.buttonTapped() -&gt; ()"
-                  moduleName = "localization-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maclys/Documents/localization-app/localization-app/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "968">
-               </Location>
-               <Location
-                  uuid = "2CAA843C-5B6C-4413-8DE0-58DC1514FA40 - 863b6de87fe42c23"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "localization_app.AddressViewController.buttonTapped() -&gt; ()"
-                  moduleName = "localization-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maclys/Documents/localization-app/localization-app/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "1000">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B968E1AF-006F-4F5B-BE69-1EAE142477C4"
+            uuid = "6E685F1F-F606-4C00-8D85-30A6568C59B6"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "localization-app/ViewController.swift"
+            filePath = "localization-app/Address/View/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "buttonTapped()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "845274AD-1AB7-4F0E-B4C1-B374971748B2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "localization-app/Address/View/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
@@ -165,79 +55,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "353A6546-B2D4-41AA-A625-ACA16A551B33"
+            uuid = "9083B7F1-F9A1-4507-A5C9-1F41ED33531F"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "localization-app/ViewController.swift"
+            filePath = "localization-app/Address/View/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "buttonTapped()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "353A6546-B2D4-41AA-A625-ACA16A551B33 - d085024e91f378f4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "localization_app.AddressViewController.showAddressView(cep: Swift.String, state: Swift.String, city: Swift.String, neighborhood: Swift.String, street: Swift.String, service: Swift.String) -&gt; ()"
-                  moduleName = "localization-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maclys/Documents/localization-app/localization-app/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "192">
-               </Location>
-               <Location
-                  uuid = "353A6546-B2D4-41AA-A625-ACA16A551B33 - 863b6de87fe42b3b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "localization_app.AddressViewController.buttonTapped() -&gt; ()"
-                  moduleName = "localization-app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maclys/Documents/localization-app/localization-app/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "512">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "942372CD-64CB-44C5-982B-A9C326EE6E4D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "localization-app/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "searchButton"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B2EAFA2A-2406-4C7B-BA78-D93B88523500"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "localization-app/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "buttonTapped()"
             landmarkType = "7">
          </BreakpointContent>
@@ -245,96 +71,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "21DE9EA8-A100-485D-8410-3D666E7ECB7B"
+            uuid = "AF440D07-A3FC-4297-8C8C-9FEC2CFB5F02"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "localization-app/ViewController.swift"
+            filePath = "localization-app/Address/View/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "buttonTapped()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F354B8EA-C95E-4221-870D-2C1E2B79F77B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "localization-app/Address/Factory/AddressFactory.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "9"
-            endingLineNumber = "9"
-            landmarkName = "build()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D278618D-71E4-4033-83F0-66B43CB11ED0"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "localization-app/Address/Factory/AddressFactory.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "8"
-            endingLineNumber = "8"
-            landmarkName = "build()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "58165451-243D-4F1D-8FD8-7898C8F128B8"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "localization-app/Address/Factory/AddressFactory.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "7"
-            endingLineNumber = "7"
-            landmarkName = "build()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "368033A4-CFA1-4B17-997D-90544796F70D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "localization-app/Address/Factory/AddressFactory.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "11"
-            endingLineNumber = "11"
-            landmarkName = "build()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "52BDD70C-AB21-4FD3-81C7-7B22ADD35E62"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "localization-app/Address/Factory/AddressFactory.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "build()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
