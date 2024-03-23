@@ -1,19 +1,91 @@
-//
-//  ViewController.swift
-//  localization-app
-//
-//  Created by Amaryllis Rosemaria Baldrez Calefi on 22/03/24.
-//
-
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-
+protocol AddressProtocol {
+    func showAddressView(cep: String,
+                          state: String,
+                          city: String,
+                          neighborhood: String,
+                          street: String,
+                          service: String)
 }
 
+class AddressViewController: UIViewController, UITextFieldDelegate, AddressProtocol {
+    
+    var interactor: AddressInteractorProtocol?
+    
+    private lazy var textField: UITextField = {
+        let textField = UITextField()
+        textField.placeholder = "Place holder text"
+        textField.borderStyle = UITextField.BorderStyle.line
+        textField.backgroundColor = UIColor.white
+        textField.textColor = UIColor.blue
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        return textField
+    }()
+    
+    private lazy var searchButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Buscar", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        return button
+    }()
+    
+    private var addressView: AddressView = {
+        let addressView = AddressView(cep: "", state: "", city: "", neighborhood: "", street: "", service: "")
+        addressView.isHidden = true
+        return addressView
+    }()
+    
+    @objc func buttonTapped() {
+        // Get the value from the text field
+        guard let text = textField.text else {
+            print("Text field is empty")
+            return
+        }
+        
+        interactor?.fetchAddress(cep: text)
+        
+        addressView.reloadInputViews()
+        
+        // Use the value as needed
+        print("Value from text field: \(text)")
+    }
+    
+    func showAddressView(cep: String,
+                          state: String,
+                          city: String,
+                          neighborhood: String,
+                          street: String,
+                          service: String) {
+        addressView = AddressView(cep: cep, state: state, city: city, neighborhood: neighborhood, street: street, service: service)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        setupViews()
+    }
+    
+    func setupViews() {
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(textField)
+        view.addSubview(searchButton)
+        view.addSubview(addressView)
+        
+        NSLayoutConstraint.activate([
+            textField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
+            textField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8),
+            textField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8),
+            textField.heightAnchor.constraint(equalToConstant: 40),
+            
+            searchButton.topAnchor.constraint(equalTo: textField.bottomAnchor, constant: 24),
+            searchButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            
+            addressView.topAnchor.constraint(equalTo: searchButton.bottomAnchor, constant: 24),
+            addressView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8),
+            addressView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8)
+        ])
+    }
+    
+}
