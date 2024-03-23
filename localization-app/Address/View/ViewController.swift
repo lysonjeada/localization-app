@@ -19,18 +19,26 @@ class AddressViewController: UIViewController, UITextFieldDelegate, AddressProto
         textField.borderStyle = UITextField.BorderStyle.line
         textField.backgroundColor = UIColor.white
         textField.textColor = UIColor.blue
+        textField.layer.cornerRadius = 12
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
     
     private lazy var searchButton: UIButton = {
         let button = UIButton()
-        button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         button.setTitle("Buscar", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitleColor(.systemBlue, for: .normal)
-        button.backgroundColor = .black
         return button
+    }()
+    
+    private lazy var formStackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [textField, searchButton])
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.spacing = 8
+        stackView.axis = .vertical
+        stackView.alignment = .center
+        return stackView
     }()
     
     private var addressView: AddressView = {
@@ -41,17 +49,19 @@ class AddressViewController: UIViewController, UITextFieldDelegate, AddressProto
     
     @objc func buttonTapped() {
         print("aaaaaa")
-//        // Get the value from the text field
-//        guard let text = textField.text else {
-//            print("Text field is empty")
-//            return
-//        }
-//        
-//        interactor?.fetchAddress(cep: text)
-//        addressView.reloadInputViews()
-//        
-//        // Use the value as needed
-//        print("Value from text field: \(text)")
+        // Get the value from the text field
+        guard let text = textField.text else {
+            print("Text field is empty")
+            return
+        }
+        
+        let cep = (text as NSString).integerValue
+        
+        interactor?.fetchAddress(cep: cep)
+        addressView.reloadInputViews()
+        
+        // Use the value as needed
+        print("Value from text field: \(text)")
     }
     
     func showAddressView(cep: String,
@@ -66,27 +76,23 @@ class AddressViewController: UIViewController, UITextFieldDelegate, AddressProto
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        searchButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         setupViews()
     }
     
     func setupViews() {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .white
-        view.addSubview(textField)
-        view.addSubview(searchButton)
+        view.addSubview(formStackView)
         view.addSubview(addressView)
         
-        searchButton.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -24).isActive = true
-        
         NSLayoutConstraint.activate([
-            textField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
-            textField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8),
-            textField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8),
-            textField.heightAnchor.constraint(equalToConstant: 40),
+            formStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 12),
+            formStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 12),
+            formStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -12),
+            formStackView.heightAnchor.constraint(equalToConstant: 200),
             
-            searchButton.topAnchor.constraint(equalTo: textField.bottomAnchor, constant: 24),
-            
-            addressView.topAnchor.constraint(equalTo: searchButton.bottomAnchor, constant: 24),
+            addressView.topAnchor.constraint(equalTo: formStackView.bottomAnchor, constant: 24),
             addressView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8),
             addressView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8)
         ])

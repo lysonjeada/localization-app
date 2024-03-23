@@ -1,7 +1,7 @@
 import Foundation
 
 protocol AddressInteractorProtocol {
-    func fetchAddress(cep: String)
+    func fetchAddress(cep: Int)
 }
 
 class AddressInteractor: AddressInteractorProtocol {
@@ -12,7 +12,7 @@ class AddressInteractor: AddressInteractorProtocol {
         self.presenter = presenter
     }
     
-    func fetchAddress(cep: String) {
+    func fetchAddress(cep: Int) {
         let apiManager = APIManager(cep: cep)
         
         apiManager.fetchData { [weak self] result in

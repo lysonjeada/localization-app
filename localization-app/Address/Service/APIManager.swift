@@ -8,10 +8,9 @@ enum DataError: Error {
 
 class APIManager {
     
-    var cep: String
+    var cep: Int
     
-    
-    init(cep: String) {
+    init(cep: Int) {
         self.cep = cep
     }
 
