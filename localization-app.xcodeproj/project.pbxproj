@@ -65,15 +65,10 @@
 			isa = PBXGroup;
 			children = (
 				24A8BC9E2BAE2C5100BB8851 /* Address */,
-				24A8BC982BADDD7A00BB8851 /* Interactor */,
-				24A8BC952BADDB0700BB8851 /* View */,
 				24A8BC7D2BADCF8500BB8851 /* AppDelegate.swift */,
 				24A8BC7F2BADCF8500BB8851 /* SceneDelegate.swift */,
-				24A8BC812BADCF8500BB8851 /* ViewController.swift */,
 				24A8BC862BADCF8600BB8851 /* Assets.xcassets */,
 				24A8BC8B2BADCF8600BB8851 /* Info.plist */,
-				24A8BC912BADD08000BB8851 /* APIManager.swift */,
-				24A8BC932BADD19800BB8851 /* AddressResponse.swift */,
 			);
 			path = "localization-app";
 			sourceTree = "<group>";
@@ -81,6 +76,7 @@
 		24A8BC952BADDB0700BB8851 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				24A8BC812BADCF8500BB8851 /* ViewController.swift */,
 				24A8BC962BADDB1600BB8851 /* AddressView.swift */,
 			);
 			path = View;
@@ -105,6 +101,9 @@
 		24A8BC9E2BAE2C5100BB8851 /* Address */ = {
 			isa = PBXGroup;
 			children = (
+				24A8BCA22BAF615C00BB8851 /* Service */,
+				24A8BC952BADDB0700BB8851 /* View */,
+				24A8BC982BADDD7A00BB8851 /* Interactor */,
 				24A8BC9F2BAE2CA000BB8851 /* Factory */,
 				24A8BC9B2BADE21E00BB8851 /* Presenter */,
 			);
@@ -117,6 +116,15 @@
 				24A8BCA02BAE2CB100BB8851 /* AddressFactory.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		24A8BCA22BAF615C00BB8851 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				24A8BC932BADD19800BB8851 /* AddressResponse.swift */,
+				24A8BC912BADD08000BB8851 /* APIManager.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
