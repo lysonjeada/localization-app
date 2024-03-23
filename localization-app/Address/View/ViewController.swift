@@ -76,7 +76,8 @@ class AddressViewController: UIViewController, UITextFieldDelegate, AddressProto
         view.addSubview(searchButton)
         view.addSubview(addressView)
         
-        searchButton.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -24).isActive = true
+        // SE QUISER DEIXAR O BOTÃO OCUPANDO O WIDTH PODE COMENTAR ESSA LINHA
+        //searchButton.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -24).isActive = true
         
         NSLayoutConstraint.activate([
             textField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
@@ -85,6 +86,8 @@ class AddressViewController: UIViewController, UITextFieldDelegate, AddressProto
             textField.heightAnchor.constraint(equalToConstant: 40),
             
             searchButton.topAnchor.constraint(equalTo: textField.bottomAnchor, constant: 24),
+            searchButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            searchButton.centerYAnchor.constraint(equalTo: textField.bottomAnchor, constant: 48),
             
             addressView.topAnchor.constraint(equalTo: searchButton.bottomAnchor, constant: 24),
             addressView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8),
